@@ -40,7 +40,10 @@ function rot13(encodedStr) {
 		   {
 			   decodedArr+=encodedStr[i];
 		   }
-		   decodedArr+=lookup[encodedStr[i]];
+		   else{
+			   decodedArr+=lookup[encodedStr[i]];
+		   }
+		   
 	   }
    
   return decodedArr; //return decodedArr
